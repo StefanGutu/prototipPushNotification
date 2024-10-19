@@ -1,12 +1,6 @@
-// import { useEffect} from 'react';
 import { sendPushNotification } from './api'; 
 
 const NotificationPage = () => {
-    // useEffect(() => {
-    //     if ("serviceWorker" in navigator) {
-    //         sendPushNotification().catch(err => console.error(err));
-    //     }
-    // }, []);
 
     const testClick = () => {
         setTimeout(() => {

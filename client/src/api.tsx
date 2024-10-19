@@ -1,9 +1,5 @@
 const vapidPublicKey = "BLfq3iDTKDQYMeUpFjz2vTjsqWekSHkCB4Fzv5EKKzXcxPDP7rH8SOdn7DqIyEujKey-SpOXwYGWmSv_XFjb9Og"
 
-if ("serviceWorker" in navigator) {
-    sendPushNotification().catch(err => console.error(err));
-}
-
 function urlBase64ToUint8Array(base64String: string) {
     const padding = "=".repeat((4 - base64String.length % 4) % 4);
     const base64 = (base64String + padding)

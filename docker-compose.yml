@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  server:
+    container_name: server
+    restart: unless-stopped
+    build:
+      context: ./server  
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+    networks:
+      - my-network
+
+  client:
+    container_name: client
+    restart: unless-stopped
+    build:
+      context: ./client  
+      dockerfile: Dockerfile
+    ports:
+      - '5173:5173'
+    networks:
+      - my-network
+
+networks:
+  my-network:
+

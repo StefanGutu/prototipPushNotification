@@ -37,7 +37,7 @@ app.post('/api/send-notification',(req, res) => {
         console.log("Received subscription:", subscription);
         console.log("-------------------------------------------------------------------")
     
-        const payload = JSON.stringify({
+        const payload = JSON.stringify({  
             title: 'Hi!',
             body: 'Test push notification',
             url: 'https://localhost:5173'

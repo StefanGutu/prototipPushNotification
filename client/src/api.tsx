@@ -18,7 +18,7 @@ function urlBase64ToUint8Array(base64String: string) {
 export async function sendPushNotification(){
 
     console.log("Before Register!");
-    const register = await navigator.serviceWorker.register('/ServiceWorker.js', {})
+    const register = await navigator.serviceWorker.register('/ServiceWorker.ts', {})
     console.log("Service Worker Registered!");
 
 

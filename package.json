@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@types/serviceworker": "^0.0.101"
+  }
+}
